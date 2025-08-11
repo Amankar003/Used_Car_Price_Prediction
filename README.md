@@ -1,66 +1,65 @@
-# Used_Car_Price_Prediction
-"Machine Learning model to predict used car prices based on specifications and usage details
+# 🚗 Used Car Price Prediction
 
 ## 📌 Project Overview
 
-Used Car Price Prediction ek Machine Learning based project hai jiska main goal hai second-hand cars ke accurate price predict karna unke various features ke basis par. Is project se car buyers aur sellers dono ko market me fair price estimate karne me madad milti hai, jisse negotiation easy ho jata hai aur fraud hone ke chances kam ho jate hain.
+The Used Car Price Prediction project aims to accurately predict the prices of second-hand cars based on various features using machine learning techniques. This helps both buyers and sellers estimate fair market prices, making negotiations easier and reducing the chances of fraud.
 
-Ye project real-world data pe based hai jisme car ke model, manufacturing year, mileage, fuel type, transmission, ownership history jaise factors consider kiye gaye hain. Machine Learning regression models ka use karke price prediction kiya gaya hai.
+The project uses real-world data including car model, manufacturing year, mileage, fuel type, transmission, ownership history, and more. Various regression models have been applied to predict car prices effectively.
 
 ---
 
 ## 🛠️ Technologies & Tools
 
-- **Programming Language:** Python 3.x
-- **Libraries:** Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
-- **Environment:** Jupyter Notebook
-- **Version Control:** Git & GitHub
+- **Programming Language:** Python 3.x  
+- **Libraries:** Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn  
+- **Environment:** Jupyter Notebook  
+- **Version Control:** Git & GitHub  
 
 ---
 
 ## 📊 Dataset Description
 
-Dataset mein approximately [mention dataset size if known] car listings ke details hain, jinme ye features shamil hain:
+The dataset consists of approximately [mention dataset size if known] used car listings with the following features:
 
-| Feature            | Description                              |
-|--------------------|------------------------------------------|
-| Car Make & Model   | Manufacturer aur car ka model name         |
-| Year               | Manufacturing year of the car              |
-| Kilometers Driven  | Car ne kitna distance travel kiya hai       |
-| Fuel Type          | Petrol, Diesel, CNG, Electric etc.          |
-| Transmission       | Manual ya Automatic                          |
-| Owner Type         | First, Second ya Third owner etc.            |
-| Mileage            | Car ki mileage (km per litre ya km per kWh) |
-| Engine             | Engine capacity (CC)                         |
-| Max Power          | Car ki maximum power (bhp)                    |
-| Seats              | Car me kitne log baith sakte hain            |
-| Price              | Car ka market price (target variable)        |
+| Feature            | Description                               |
+|--------------------|-------------------------------------------|
+| Car Make & Model   | Manufacturer and model name of the car     |
+| Year               | Manufacturing year of the car               |
+| Kilometers Driven  | Total kilometers driven by the car          |
+| Fuel Type          | Petrol, Diesel, CNG, Electric, etc.         |
+| Transmission       | Manual or Automatic                         |
+| Owner Type         | First, Second, or Third owner, etc.          |
+| Mileage            | Car mileage (km per litre or km per kWh)    |
+| Engine             | Engine capacity in CC                        |
+| Max Power          | Maximum power of the car in bhp              |
+| Seats              | Number of seats                              |
+| Price              | Market price of the car (target variable)    |
 
-Dataset [Kaggle Used Car Dataset](https://www.kaggle.com/datasets/atharvaingle/used-car-dataset-ford-and-mercedes) se liya gaya hai, jisme Ford aur Mercedes cars ki listings hain.
+The data is sourced from the [Kaggle Used Car Dataset](https://www.kaggle.com/datasets/atharvaingle/used-car-dataset-ford-and-mercedes), which includes Ford and Mercedes car listings.
 
 ---
 
 ## ⚙️ Features & Workflow
 
 1. **Data Cleaning & Preprocessing**  
-   - Missing values ko identify karke handle kiya gaya hai  
-   - Unnecessary columns drop kiye gaye hain  
-   - Categorical variables ko label encoding / one-hot encoding se convert kiya gaya hai  
-   - Data normalization / scaling apply ki gayi hai jahan jarurat thi  
+   - Handling missing values  
+   - Dropping irrelevant columns  
+   - Encoding categorical variables (Label Encoding / One-Hot Encoding)  
+   - Applying normalization/scaling where necessary  
 
 2. **Exploratory Data Analysis (EDA)**  
-   - Various visualizations ke zariye data distribution, outliers, correlations check ki gayi hain  
-   - Important features ka impact price par analyze kiya gaya hai  
+   - Visualizing data distributions, outliers, and correlations  
+   - Analyzing feature impact on price  
 
 3. **Model Building**  
-   - Multiple regression algorithms try kiye gaye hain (Linear Regression, Random Forest, XGBoost etc.)  
-   - Hyperparameter tuning ke through best model select kiya gaya hai  
+   - Training multiple regression models like Linear Regression, Random Forest, XGBoost, etc.  
+   - Hyperparameter tuning to select the best performing model  
 
 4. **Model Evaluation**  
-   - Performance metrics jaise Mean Absolute Error (MAE), Mean Squared Error (MSE), Root Mean Squared Error (RMSE), R² Score se model ki accuracy evaluate ki gayi hai  
+   - Using metrics such as Mean Absolute Error (MAE), Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and R² Score to evaluate model accuracy  
 
 5. **Prediction**  
-   - Final selected model se naye car data pe price prediction kiya ja sakta hai  
+   - Predicting prices for new car data using the finalized model  
 
 ---
 
@@ -68,30 +67,14 @@ Dataset [Kaggle Used Car Dataset](https://www.kaggle.com/datasets/atharvaingle/u
 
 ### Requirements
 
-Python 3.x aur niche diye libraries install honi chahiye:
+Make sure Python 3.x is installed along with these libraries:
 
 ```bash
 pip install pandas numpy matplotlib seaborn scikit-learn
 
-📈 Results & Performance
-Random Forest Regression model ne sabse achha performance diya, jiska R² score ~0.85 tha (example value, ap apne model ke hisaab se update kar lena)
+### 📈 Results & Performance
+The Random Forest Regression model showed the best performance with an R² score of approximately 0.85 (update this based on your results).
 
-MAE aur RMSE values low hain, jo model ki accuracy ko dikhati hain
+MAE and RMSE values were low, indicating good accuracy.
 
-Model ne price prediction me consistently achhe results diye hain, jo practical use ke liye reliable hain
-
-Visualizations aur detailed metrics notebook me included hain.
-
-
-### Future Scope
-
-Aur zyada data sources integrate karna for better generalization
-
-Deep Learning models use karke accuracy improve karna
-
-Web app ya API banake real-time car price prediction service dena
-
-Additional features jaise car condition, accident history ko model me include karna
-
-
-Made with ❤️ by Aman Kumar
+The model consistently predicted prices close to actual values, making it reliable for practical use.
